@@ -13,7 +13,7 @@
 <a name="librarymd"></a>
 
 
-# @raydeck/serverless-deploy - v2.0.0
+# @raydeck/serverless-deploy - v2.0.1
 
 ## Index
 
@@ -35,7 +35,7 @@
 
 • **description**: *any*
 
-*Defined in [bin.ts:9](https://github.com/rhdeck/serverless-deploy/blob/a86fe18/src/bin.ts#L9)*
+*Defined in [bin.ts:9](https://github.com/rhdeck/serverless-deploy/blob/3df2512/src/bin.ts#L9)*
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 • **start**: *number* = Date.now().valueOf()
 
-*Defined in [bin.ts:2](https://github.com/rhdeck/serverless-deploy/blob/a86fe18/src/bin.ts#L2)*
+*Defined in [bin.ts:2](https://github.com/rhdeck/serverless-deploy/blob/3df2512/src/bin.ts#L2)*
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 • **version**: *any*
 
-*Defined in [bin.ts:9](https://github.com/rhdeck/serverless-deploy/blob/a86fe18/src/bin.ts#L9)*
+*Defined in [bin.ts:9](https://github.com/rhdeck/serverless-deploy/blob/3df2512/src/bin.ts#L9)*
 
 ## Functions
 
@@ -59,7 +59,7 @@ ___
 
 ▸ **Deploy**(`dir`: string): *void*
 
-*Defined in [bin.ts:92](https://github.com/rhdeck/serverless-deploy/blob/a86fe18/src/bin.ts#L92)*
+*Defined in [bin.ts:92](https://github.com/rhdeck/serverless-deploy/blob/3df2512/src/bin.ts#L92)*
 
 **Parameters:**
 
@@ -75,7 +75,7 @@ ___
 
 ▸ **Remove**(`dir`: string): *void*
 
-*Defined in [bin.ts:104](https://github.com/rhdeck/serverless-deploy/blob/a86fe18/src/bin.ts#L104)*
+*Defined in [bin.ts:104](https://github.com/rhdeck/serverless-deploy/blob/3df2512/src/bin.ts#L104)*
 
 **Parameters:**
 
@@ -91,7 +91,7 @@ ___
 
 ▸ **doesPackageJSONExist**(`fp`: string): *boolean*
 
-*Defined in [bin.ts:88](https://github.com/rhdeck/serverless-deploy/blob/a86fe18/src/bin.ts#L88)*
+*Defined in [bin.ts:88](https://github.com/rhdeck/serverless-deploy/blob/3df2512/src/bin.ts#L88)*
 
 **Parameters:**
 
