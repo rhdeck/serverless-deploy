@@ -39,7 +39,6 @@
   ],
   "dependencies": {
     "@raydeck/dependency-tree-resolver": "^1.0.7",
-    "@raydeck/serverless-serverless-deploy": "^1.0.2",
     "commander": "^6.0.0",
     "install-peers-cli": "^2.2.0"
   }
