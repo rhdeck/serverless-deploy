@@ -97,9 +97,19 @@ function Deploy(dir: string) {
     console.log(`Deploying ${dir}`);
     spawnSync("yarn", [], { stdio: "inherit" });
     spawnSync("npx", ["fix-local-dependencies"], { stdio: "inherit" });
-    spawnSync("yarn", ["deploy"], { stdio: "inherit" });
-    console.log(`Finished deploying ${dir}`);
-  } catch (e) {}
+    //check local package.json for deployment
+    const p = <{ scripts: { deploy: string | undefined } | undefined }>(
+      JSON.parse(join(dir, "package.json"))
+    );
+    if (p?.scripts?.deploy) {
+      spawnSync("yarn", ["deploy"], { stdio: "inherit" });
+      console.log(`Finished deploying ${dir}`);
+    } else {
+      console.log(`no deploy step for package at ${dir}`);
+    }
+  } catch (e) {
+    throw new Error(`Could not deploy ${dir}: ${e.message}`);
+  }
 }
 function Remove(dir: string) {
   if (!existsSync(dir)) return;
