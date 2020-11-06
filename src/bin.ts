@@ -99,10 +99,24 @@ function Deploy(dir: string) {
     spawnSync("npx", ["fix-local-dependencies"], { stdio: "inherit" });
     //check local package.json for deployment
     const p = <{ scripts: { deploy: string | undefined } | undefined }>(
-      JSON.parse(join(dir, "package.json"))
+      JSON.parse(readFileSync(join(dir, "package.json"), { encoding: "utf-8" }))
     );
     if (p?.scripts?.deploy) {
-      spawnSync("yarn", ["deploy"], { stdio: "inherit" });
+      const { status, signal } = spawnSync("yarn", ["deploy"], {
+        stdio: "inherit",
+      });
+      if (status) {
+        //that's not good
+        throw new Error(
+          `Could not deploy ${dir} - deploy step exited with code ${status}`
+        );
+      }
+      if (signal) {
+        //that's also not good
+        throw new Error(
+          `Could not deploy ${dir} - deploy step terminated with signal ${signal}`
+        );
+      }
       console.log(`Finished deploying ${dir}`);
     } else {
       console.log(`no deploy step for package at ${dir}`);
