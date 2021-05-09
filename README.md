@@ -7,19 +7,19 @@
 ```
 # Options
 * -V, --version output the version number 
-* -p --package Package to deploy if specified 
-* -w --working-directory Working directory for the top of the monorepo 
+* -f --force Force deploy (slower but guarantees full deployment 
 
 <a name="librarymd"></a>
 
 
-# @raydeck/serverless-deploy - v2.0.3
+# @raydeck/serverless-deploy - v2.1.0
 
 ## Index
 
 ### Variables
 
 * [description](#description)
+* [force](#const-force)
 * [start](#const-start)
 * [version](#version)
 
@@ -35,7 +35,15 @@
 
 • **description**: *any*
 
-*Defined in [bin.ts:9](https://github.com/rhdeck/serverless-deploy/blob/ef0df7c/src/bin.ts#L9)*
+*Defined in [bin.ts:9](https://github.com/rhdeck/serverless-deploy/blob/2fdcc8e/src/bin.ts#L9)*
+
+___
+
+### `Const` force
+
+• **force**: *any* = commander.opts().force || false
+
+*Defined in [bin.ts:27](https://github.com/rhdeck/serverless-deploy/blob/2fdcc8e/src/bin.ts#L27)*
 
 ___
 
@@ -43,7 +51,7 @@ ___
 
 • **start**: *number* = Date.now().valueOf()
 
-*Defined in [bin.ts:2](https://github.com/rhdeck/serverless-deploy/blob/ef0df7c/src/bin.ts#L2)*
+*Defined in [bin.ts:2](https://github.com/rhdeck/serverless-deploy/blob/2fdcc8e/src/bin.ts#L2)*
 
 ___
 
@@ -51,21 +59,22 @@ ___
 
 • **version**: *any*
 
-*Defined in [bin.ts:9](https://github.com/rhdeck/serverless-deploy/blob/ef0df7c/src/bin.ts#L9)*
+*Defined in [bin.ts:9](https://github.com/rhdeck/serverless-deploy/blob/2fdcc8e/src/bin.ts#L9)*
 
 ## Functions
 
 ###  Deploy
 
-▸ **Deploy**(`dir`: string): *void*
+▸ **Deploy**(`dir`: string, `force`: boolean): *void*
 
-*Defined in [bin.ts:92](https://github.com/rhdeck/serverless-deploy/blob/ef0df7c/src/bin.ts#L92)*
+*Defined in [bin.ts:98](https://github.com/rhdeck/serverless-deploy/blob/2fdcc8e/src/bin.ts#L98)*
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`dir` | string |
+Name | Type | Default |
+------ | ------ | ------ |
+`dir` | string | - |
+`force` | boolean | false |
 
 **Returns:** *void*
 
@@ -75,7 +84,7 @@ ___
 
 ▸ **Remove**(`dir`: string): *void*
 
-*Defined in [bin.ts:128](https://github.com/rhdeck/serverless-deploy/blob/ef0df7c/src/bin.ts#L128)*
+*Defined in [bin.ts:138](https://github.com/rhdeck/serverless-deploy/blob/2fdcc8e/src/bin.ts#L138)*
 
 **Parameters:**
 
@@ -91,7 +100,7 @@ ___
 
 ▸ **doesPackageJSONExist**(`fp`: string): *boolean*
 
-*Defined in [bin.ts:88](https://github.com/rhdeck/serverless-deploy/blob/ef0df7c/src/bin.ts#L88)*
+*Defined in [bin.ts:94](https://github.com/rhdeck/serverless-deploy/blob/2fdcc8e/src/bin.ts#L94)*
 
 **Parameters:**
 
