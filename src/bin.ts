@@ -12,14 +12,19 @@ const { version, description } = JSON.parse(
 commander
   .version(version)
   .description(description)
-  .option("-p --package", "Package to deploy if specified")
+  // .option("-p --package", "Package to deploy if specified")
+  // .option(
+  //   "-w --working-directory",
+  //   "Working directory for the top of the monorepo",
+  //   "."
+  // )
   .option(
-    "-w --working-directory",
-    "Working directory for the top of the monorepo",
-    "."
+    "-f --force",
+    "Force deploy (slower but guarantees full deployment",
+    false
   );
 commander.parse(process.argv);
-
+const force = commander.opts().force || false;
 if (!commander.isDocumenting) {
   const cwd = process.cwd();
   const serverlessInfo = getServerlessConfig(cwd);
@@ -33,7 +38,8 @@ if (!commander.isDocumenting) {
         targetservice.includes("/")
           ? targetservice
           : join(cwd, "serverless", targetservice)
-      )
+      ),
+      force
     );
   } else {
     let dependencies = <{ fp: string; deps: string[] }[]>deploy
@@ -77,7 +83,7 @@ if (!commander.isDocumenting) {
     }, <{ [key: string]: any }>{});
     resolve(depObj)
       .filter((fp) => ![cwd, cwd + "/"].includes(fp))
-      .forEach(Deploy);
+      .forEach((path) => Deploy(path, force));
   }
   if (remove) Object.values(remove).map((fp) => Remove(join(cwd, fp)));
   const end = Date.now().valueOf();
@@ -89,7 +95,7 @@ function doesPackageJSONExist(fp: string) {
   const jsonPath = join(fp, "package.json");
   return existsSync(jsonPath);
 }
-function Deploy(dir: string) {
+function Deploy(dir: string, force: boolean = false) {
   try {
     if (!existsSync(dir)) return;
     process.chdir(dir);
@@ -102,9 +108,13 @@ function Deploy(dir: string) {
       JSON.parse(readFileSync(join(dir, "package.json"), { encoding: "utf-8" }))
     );
     if (p?.scripts?.deploy) {
-      const { status, signal } = spawnSync("yarn", ["deploy"], {
-        stdio: "inherit",
-      });
+      const { status, signal } = spawnSync(
+        "yarn",
+        ["deploy", ...(force ? ["--force"] : [])],
+        {
+          stdio: "inherit",
+        }
+      );
       if (status) {
         //that's not good
         throw new Error(
@@ -117,7 +127,7 @@ function Deploy(dir: string) {
           `Could not deploy ${dir} - deploy step terminated with signal ${signal}`
         );
       }
-      console.log(`Finished deploying ${dir}`);
+      console.log(`Finished deploying serverless pacakge ${dir}`);
     } else {
       console.log(`no deploy step for package at ${dir}`);
     }
