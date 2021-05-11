@@ -201,13 +201,6 @@
   resolved "https://registry.yarnpkg.com/@raydeck/dependency-tree-resolver/-/dependency-tree-resolver-1.0.7.tgz#ab60fc01b95ffea1c0a392b5b2a5da598ca8b029"
   integrity sha512-l4268HEJJskQDPd9dTBjDXdb5DEV16HCF/72pC0rmLDhryAGeGqgoOFi+PeusfKUTwGfMSWT6c/lc1RRf+Z1ow==
 
-"@raydeck/serverless-base@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@raydeck/serverless-base/-/serverless-base-1.0.2.tgz#9260ba611e47b940fa102a52f2f47b70ab35b73b"
-  integrity sha512-/mtHBub7FLu7oVb0oABcKJQMrUY4QD2JZOciIwf7KeZ5UH+MuXuPLwkWR0mZ+T56yp4BLfmH877n5s3Fk40Cbw==
-  dependencies:
-    commander "^6.0.0"
-
 "@textlint/ast-node-types@^4.0.3":
   version "4.3.4"
   resolved "https://registry.yarnpkg.com/@textlint/ast-node-types/-/ast-node-types-4.3.4.tgz#f6596c45c32c85dc06915c3077bb7686033efd32"
@@ -2428,9 +2421,9 @@ lodash.without@~4.4.0:
   integrity sha1-PNRXSgC2e643OpS3SHcmQFB7eqw=
 
 lodash@^4.17.15:
-  version "4.17.19"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.19.tgz#e48ddedbe30b3321783c5b4301fbd353bc1e4a4b"
-  integrity sha512-JNvd8XER9GQX0v2qJgsaN/mzFCNA5BRe/j8JN9d+tWyGLSodKQHKFicdwNYzWwI3wjRnaKPsGj1XkBjx/F96DQ==
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
+  integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
 
 loud-rejection@^1.0.0:
   version "1.6.0"
