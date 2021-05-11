@@ -201,13 +201,6 @@
   resolved "https://registry.yarnpkg.com/@raydeck/dependency-tree-resolver/-/dependency-tree-resolver-1.0.7.tgz#ab60fc01b95ffea1c0a392b5b2a5da598ca8b029"
   integrity sha512-l4268HEJJskQDPd9dTBjDXdb5DEV16HCF/72pC0rmLDhryAGeGqgoOFi+PeusfKUTwGfMSWT6c/lc1RRf+Z1ow==
 
-"@raydeck/serverless-base@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@raydeck/serverless-base/-/serverless-base-1.0.2.tgz#9260ba611e47b940fa102a52f2f47b70ab35b73b"
-  integrity sha512-/mtHBub7FLu7oVb0oABcKJQMrUY4QD2JZOciIwf7KeZ5UH+MuXuPLwkWR0mZ+T56yp4BLfmH877n5s3Fk40Cbw==
-  dependencies:
-    commander "^6.0.0"
-
 "@textlint/ast-node-types@^4.0.3":
   version "4.3.4"
   resolved "https://registry.yarnpkg.com/@textlint/ast-node-types/-/ast-node-types-4.3.4.tgz#f6596c45c32c85dc06915c3077bb7686033efd32"
@@ -1690,9 +1683,9 @@ highlight.js@^10.0.0:
   integrity sha512-Q39v/Mn5mfBlMff9r+zzA+gWxRsCRKwEMvYTiisLr/XUiFI/4puWt0Ojdko3R3JCNWGdOWaA5g/Yxqa23kC5AA==
 
 hosted-git-info@^2.1.4, hosted-git-info@^2.7.1, hosted-git-info@^2.8.8:
-  version "2.8.8"
-  resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.8.8.tgz#7539bd4bc1e0e0a895815a2e0262420b12858488"
-  integrity sha512-f/wzC2QaWBs7t9IYqB4T3sR1xviIViXJRJTWBlx2Gf3g0Xi5vI7Yy4koXQ1c9OYDGHN9sBy1DQ2AB8fqZBWhUg==
+  version "2.8.9"
+  resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.8.9.tgz#dffc0bf9a21c02209090f2aa69429e1414daf3f9"
+  integrity sha512-mxIDAb9Lsm6DoOJ7xH+5+X4y1LU/4Hi50L9C5sIswK3JzULS4bwk1FvjdBgvYR4bzT4tuUQiC15FE2f5HbLvYw==
 
 htmlparser2@~3.9.2:
   version "3.9.2"
