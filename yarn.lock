@@ -201,13 +201,6 @@
   resolved "https://registry.yarnpkg.com/@raydeck/dependency-tree-resolver/-/dependency-tree-resolver-1.0.7.tgz#ab60fc01b95ffea1c0a392b5b2a5da598ca8b029"
   integrity sha512-l4268HEJJskQDPd9dTBjDXdb5DEV16HCF/72pC0rmLDhryAGeGqgoOFi+PeusfKUTwGfMSWT6c/lc1RRf+Z1ow==
 
-"@raydeck/serverless-base@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@raydeck/serverless-base/-/serverless-base-1.0.2.tgz#9260ba611e47b940fa102a52f2f47b70ab35b73b"
-  integrity sha512-/mtHBub7FLu7oVb0oABcKJQMrUY4QD2JZOciIwf7KeZ5UH+MuXuPLwkWR0mZ+T56yp4BLfmH877n5s3Fk40Cbw==
-  dependencies:
-    commander "^6.0.0"
-
 "@textlint/ast-node-types@^4.0.3":
   version "4.3.4"
   resolved "https://registry.yarnpkg.com/@textlint/ast-node-types/-/ast-node-types-4.3.4.tgz#f6596c45c32c85dc06915c3077bb7686033efd32"
@@ -1568,9 +1561,9 @@ git-raw-commits@^2.0.0:
     through2 "^3.0.0"
 
 glob-parent@^5.1.0:
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/glob-parent/-/glob-parent-5.1.1.tgz#b6c1ef417c4e5663ea498f1c45afac6916bbc229"
-  integrity sha512-FnI+VGOpnlGHWZxthPGR+QhR78fuiK0sNLkHQv+bL9fQi57lNNdquIbna/WrfROrolq8GK5Ek6BiMwqL/voRYQ==
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/glob-parent/-/glob-parent-5.1.2.tgz#869832c58034fe68a4093c17dc15e8340d8401c4"
+  integrity sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==
   dependencies:
     is-glob "^4.0.1"
 
