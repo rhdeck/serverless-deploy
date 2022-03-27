@@ -201,13 +201,6 @@
   resolved "https://registry.yarnpkg.com/@raydeck/dependency-tree-resolver/-/dependency-tree-resolver-1.0.7.tgz#ab60fc01b95ffea1c0a392b5b2a5da598ca8b029"
   integrity sha512-l4268HEJJskQDPd9dTBjDXdb5DEV16HCF/72pC0rmLDhryAGeGqgoOFi+PeusfKUTwGfMSWT6c/lc1RRf+Z1ow==
 
-"@raydeck/serverless-base@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@raydeck/serverless-base/-/serverless-base-1.0.2.tgz#9260ba611e47b940fa102a52f2f47b70ab35b73b"
-  integrity sha512-/mtHBub7FLu7oVb0oABcKJQMrUY4QD2JZOciIwf7KeZ5UH+MuXuPLwkWR0mZ+T56yp4BLfmH877n5s3Fk40Cbw==
-  dependencies:
-    commander "^6.0.0"
-
 "@textlint/ast-node-types@^4.0.3":
   version "4.3.4"
   resolved "https://registry.yarnpkg.com/@textlint/ast-node-types/-/ast-node-types-4.3.4.tgz#f6596c45c32c85dc06915c3077bb7686033efd32"
@@ -2620,9 +2613,9 @@ minimist-options@^4.0.2:
     kind-of "^6.0.3"
 
 minimist@^1.2.0, minimist@^1.2.5, minimist@~1.2.0:
-  version "1.2.5"
-  resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
-  integrity sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.6.tgz#8637a5b759ea0d6e98702cfb3a9283323c93af44"
+  integrity sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q==
 
 minipass@^2.3.5, minipass@^2.6.0, minipass@^2.8.6, minipass@^2.9.0:
   version "2.9.0"
