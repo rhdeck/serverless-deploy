@@ -201,13 +201,6 @@
   resolved "https://registry.yarnpkg.com/@raydeck/dependency-tree-resolver/-/dependency-tree-resolver-1.0.7.tgz#ab60fc01b95ffea1c0a392b5b2a5da598ca8b029"
   integrity sha512-l4268HEJJskQDPd9dTBjDXdb5DEV16HCF/72pC0rmLDhryAGeGqgoOFi+PeusfKUTwGfMSWT6c/lc1RRf+Z1ow==
 
-"@raydeck/serverless-base@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@raydeck/serverless-base/-/serverless-base-1.0.2.tgz#9260ba611e47b940fa102a52f2f47b70ab35b73b"
-  integrity sha512-/mtHBub7FLu7oVb0oABcKJQMrUY4QD2JZOciIwf7KeZ5UH+MuXuPLwkWR0mZ+T56yp4BLfmH877n5s3Fk40Cbw==
-  dependencies:
-    commander "^6.0.0"
-
 "@textlint/ast-node-types@^4.0.3":
   version "4.3.4"
   resolved "https://registry.yarnpkg.com/@textlint/ast-node-types/-/ast-node-types-4.3.4.tgz#f6596c45c32c85dc06915c3077bb7686033efd32"
@@ -996,9 +989,9 @@ decamelize@^1.1.0, decamelize@^1.1.1, decamelize@^1.2.0:
   integrity sha1-9lNNFRSCabIDUue+4m9QH5oZEpA=
 
 decode-uri-component@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
-  integrity sha1-6zkTMzRYd1y4TNGh+uBiEGu4dUU=
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.2.tgz#e69dbe25d37941171dd540e024c444cd5188e1e9"
+  integrity sha512-FqUYQ+8o158GyGTrMFJms9qh3CqTKvAqgqsTnkLI8sKu0028orqBhxNMFkFen0zGyg6epACD32pjVk58ngIErQ==
 
 deep-extend@^0.6.0:
   version "0.6.0"
